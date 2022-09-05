@@ -1,3 +1,23 @@
+# Class files not to add to repo
+*.tmp
+
+# Word
+*.doc
+*.docx
+~$*.doc*
+
+# Excel
+*.xls
+*.xlsx
+~$*.xls*
+*.xlk
+
+# PowerPoint
+*.ppt
+*.pptx
+~$*.ppt*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
