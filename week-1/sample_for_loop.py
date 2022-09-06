@@ -1,28 +1,43 @@
+#!/usr/bin/env python
 
-if __name__ == '__main__':
-    spam = ['apples', 'bananas', 'tofu', 'cats']
+""" sample_for_loop project for OPSC-540 week 1
 
-    spam_str = ''
-  
+This is a small assignment file for OPSC-540 week 1 that teaches about list and string manipulation.
+
+__author__ = "Brian Levin"
+__copyright__ = "Copyright 2022, Brian Levin"
+__credits__ = ["Brian Levin", "Todd Strunce"]
+__license__ = "AGPL"
+__version__ = "0.0.1"
+__maintainer__ = "Brian Levin"
+__email__ = "brian4lawschool@gmail.com"
+__status__ = "Assignment"
+"""
+
+if __name__ == "__main__":
+    spam = ["apples", "bananas", "tofu", "cats"]
+
+    SPAM_STR = ""
+
     for spam_item in spam:
-      print("Spam item: " + spam_item)
-      spam_str = spam_str + spam_item
-      print("Spam str: " + spam_str)
+        print("Spam item: " + spam_item)
+        SPAM_STR = SPAM_STR + spam_item
+        print("Spam str: " + SPAM_STR)
 
-    print(spam_str)
+    print(SPAM_STR)
 
-    cities = ['New York', 'Chicago', 'Atlanta', 'Burlington', 'Philadelphia', 'Denver']
+    cities = ["New York", "Chicago", "Atlanta", "Burlington", "Philadelphia", "Denver"]
 
-    cities_str = ''
+    CITIES_STR = ""
 
     # manipulate cities list here
 
-    print(cities_str)
+    print(CITIES_STR)
 
-    food = ['carrots', 'mango', 'avocado']
+    food = ["carrots", "mango", "avocado"]
 
-    food_str = ''
- 
+    FOOD_STR = ""
+
     # manipulate food list here
 
-    print(food_str)
+    print(FOOD_STR)
