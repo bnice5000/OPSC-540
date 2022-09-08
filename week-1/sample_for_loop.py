@@ -14,6 +14,27 @@ __email__ = "brian4lawschool@gmail.com"
 __status__ = "Assignment"
 """
 
+def format_list_to_oxford_str_loop(list_input):
+    """Takes a list and converts it to a oxford comma separated string using a loop.
+
+    Args:
+        list_input (list): A list made of any data type or types.
+
+    Returns:
+        string: a string of the list elements formatted in oxford comma format.
+    """
+    str_comma_space = ", "
+    str_and = ", and "
+    str_return = ""
+
+    for index, element in enumerate(list_input):
+        if index == len(list_input) - 2:
+            str_return = str_return + element + str_and + list_input[index + 1]
+        if index != len(list_input) - 1 and index != len(list_input) - 2:
+            str_return = str_return + element + str_comma_space
+
+    return str_return
+
 def format_list_to_oxford_str(list_input):
     """Takes a list and converts it to a oxford comma separated string.
 
@@ -28,7 +49,7 @@ def format_list_to_oxford_str(list_input):
 if __name__ == "__main__":
     spam = ["apples", "bananas", "tofu", "cats"]
 
-    SPAM_STR = format_list_to_oxford_str(spam)
+    SPAM_STR = format_list_to_oxford_str_loop(spam)
 
     # for spam_item in spam:
     #     print("\n\nSpam item: " + spam_item)
@@ -39,7 +60,7 @@ if __name__ == "__main__":
 
     cities = ["New York", "Chicago", "Atlanta", "Burlington", "Philadelphia", "Denver"]
 
-    CITIES_STR = format_list_to_oxford_str(cities)
+    CITIES_STR = format_list_to_oxford_str_loop(cities)
 
     # manipulate cities list here
 
@@ -47,7 +68,7 @@ if __name__ == "__main__":
 
     food = ["carrots", "mango", "avocado"]
 
-    FOOD_STR = format_list_to_oxford_str(food)
+    FOOD_STR = format_list_to_oxford_str_loop(food)
 
     # manipulate food list here
 
