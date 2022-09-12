@@ -6,7 +6,7 @@ Champlain College OPSC-540 homework
 
 Week one consists some small files focused on for loops, while loops, and string and list manipulation.
 
-### File List510
+### File List
 
 - for_loop.py
 - while_loop.py
