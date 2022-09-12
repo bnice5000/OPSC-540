@@ -2,7 +2,7 @@
 
 """ collatz project for OPSC-540 week 2
 
-This file correctly impliments the collatz conjecture as a week 2 project for OPSC-540.
+This file correctly implements the collatz conjecture as a week 2 project for OPSC-540.
 
 __author__ = "Brian Levin"
 __copyright__ = "Copyright 2022, Brian Levin"
