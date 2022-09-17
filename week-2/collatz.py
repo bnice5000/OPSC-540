@@ -33,5 +33,5 @@ def collatz(number):
 
 
 if __name__ == "__main__":
-    user_input = int(input("Enter a number:"))
+    user_input = abs(int(input("Enter a number:")))
     collatz(user_input)
