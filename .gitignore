@@ -199,3 +199,8 @@ vagrant
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# SSL stuff
+*.key
+*.csr
+*.crt
