@@ -2,7 +2,8 @@
 
 """ network_sweep for OPSC-540 week 2
 
-This file ping sweeps a network and then checks a list of specific ports as a week 2 project for OPSC-540.
+This file ping sweeps a network and then checks a list of
+specific ports as a week 2 project for OPSC-540.
 
 __author__ = "Brian Levin"
 __copyright__ = "Copyright 2022, Brian Levin"
@@ -18,6 +19,7 @@ __note__ = "This is experimental and could use error handling. Use at your own p
 import socket
 import subprocess
 
+
 def port_scanner(server_ip, ports):
     """Takes active IP and check a list of ports for response.
 
@@ -32,7 +34,6 @@ def port_scanner(server_ip, ports):
         if result == 0:
             print(f"Port {port} is open.")
         sock.close()
-
 
 
 if __name__ == "__main__":

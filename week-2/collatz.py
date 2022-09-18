@@ -13,10 +13,29 @@ __maintainer__ = "Brian Levin"
 __email__ = "brian4lawschool@gmail.com"
 __status__ = "Assignment"
 """
+
+
 def is_even(number):
+    """Check if number is even.
+
+    Args:
+        number (int): Any integer
+
+    Returns:
+        bool: if the number modulus 2 equal zero, it returns true , otherwise it returns false.
+    """
     return number % 2 == 0
 
+
 def check_number(number):
+    """Takes a number and iterates it based on the collatz pattern.
+
+    Args:
+        number (int): a positive integer
+
+    Returns:
+        int: the result of the collatz process
+    """
     if is_even(number):
         number = number // 2
     else:
@@ -24,12 +43,18 @@ def check_number(number):
 
     return number
 
+
 def collatz(number):
+    """Takes a number and loops until it equals 1.
+
+    Args:
+        number (int): a positive integer
+    """
+
     while number != 1:
         print(number)
         number = check_number(number)
     print("Final number is: " + str(number))
-
 
 
 if __name__ == "__main__":

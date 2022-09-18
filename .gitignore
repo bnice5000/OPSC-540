@@ -204,3 +204,4 @@ vagrant
 *.key
 *.csr
 *.crt
+*.pem
