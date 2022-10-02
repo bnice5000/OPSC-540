@@ -21,8 +21,7 @@ import hashlib
 
 def main():
 
-    """Check hashes.txt for matching password in password.lst
-    """
+    """Check hashes.txt for matching password in password.lst"""
 
     list_answers = []
 
@@ -30,15 +29,22 @@ def main():
         list_hashes = [hashes.strip() for hashes in reader]
 
     with open("password.lst", "r", encoding="ascii") as reader:
-        dict_password = dict([(hashlib.md5(password.strip().encode("utf-8")).hexdigest(), password.strip()) for password in reader])
+        dict_password = dict(
+            [
+                (
+                    hashlib.md5(password.strip().encode("utf-8")).hexdigest(),
+                    password.strip(),
+                )
+                for password in reader
+            ]
+        )
 
     for str_hash in list_hashes:
         if str_hash in dict_password:
             list_answers.append(dict_password[str_hash])
 
     with open("answers.txt", "w", encoding="ascii") as writer:
-        writer.write('\n'.join(list_answers) + '\n')
-
+        writer.write("\n".join(list_answers) + "\n")
 
 
 if __name__ == "__main__":
