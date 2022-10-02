@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-""" file_manipulation for OPSC-540 week 3
+"""crack_pswd_sample for OPSC-540 week 4
 
-Checks magic file two different ways and returns results.
+Basic dictionary attack against a set of passwords.
 
 __author__ = "Brian Levin"
 __copyright__ = "Copyright 2022, Brian Levin"
